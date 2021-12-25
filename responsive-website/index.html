@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBFOOD</title>
-</head>
-<body>
-    <header>
-        <h1><a href="index.html">WEBFOOD</a></h1>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <a href="index.html" id="logo">Webfood</a>
+      <nav>
         <ul>
-            <li>
-                <nav>Browse Meals</nav>
-            </li>
-            <li>
-                <nav>My Orders</nav>
-            </li> 
-        </ul>  
+          <li>
+            <a href="">Browse Meals</a>
+          </li>
+          <li>
+            <a href="">My Orders</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#side-drawer" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </header>
 
-    <body>
-        <h2>Browse Our Delicius Meals</h1>
-        <div>
+    <aside id="side-drawer">
+        <header>
+            <a href="#" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+        </header>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Browse Meals</a>
+            </li>
+            <li>
+              <a href="">My Orders</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      
+    <main>
+      <h1>Browse Our Delicius Meals</h1>
+      <section id="latest-products">
+        <ul>
+          <li class="food-item">
             <article>
-                <img src="images/risotto.jpg" alt="Risotto with tiger Prawns">
-                <p>Risotto with tiger Prawns</p>
-                <p>Add to cart</p>
+              <img src="images/risotto.jpg" alt="Risotto with tiger Prawns" />
+              <div class="food-items-content">
+                <h2>Risotto with tiger Prawns</h2>
+                <a href="" class="btn">Add to cart</a>
+              </div>
             </article>
+          </li>
+          <li class="food-item">
             <article>
-                <img src="images/cheeseburgers.jpg" alt="Cheeseburgers">
-                <p>Cheeseburgers</p>
-                <p>Add to cart</p>
+              <img src="images/cheeseburgers.jpg" alt="Cheeseburgers" />
+              <div class="food-items-content">
+                <h2>Cheeseburgers</h2>
+                <a href="" class="btn">Add to cart</a>
+              </div>
             </article>
-        </div>
-    </body>
-</body>
+          </li>
+        </ul>
+      </section>
+    </main>
+    
+  </body>
 </html>
