@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Serif&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles-challenge.css" />
+    <title>Challenge Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section id="personal-data">
+          <ul>
+            <li class="personal">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" required />
+            </li>
+            <li class="personal">
+              <label for="email">Your E-Mail Address</label>
+              <input type="email" id="email" name="email" required />
+            </li>
+            <li class="personal">
+              <label for="number">Your phone number</label>
+              <input type="tel" id="number" name="number" required />
+            </li>
+          </ul>
+        </section>
+
+        <section id="message">
+            <label for="user-message">Your message</label>
+            <textarea name="" id="user-message" rows="8"></textarea>
+          </section>
+
+        <section id="find-us">
+          <label for="find-us">How did you find us?</label>
+          <select name="find-us" id="find-us">
+            <option value="Web-search">Web search</option>
+            <option value="Recommendation">Recommendation</option>
+            <option value="Social-media">Social media</option>
+          </select>
+        </section>
+
+        <section id="contact">
+          <h2>How should we reply</h2>
+          <ul>
+            <li>
+              <input type="radio" id="phone" name="contact" required/>
+              <label for="phone">Call me</label>
+            </li>
+            <li>
+              <input type="radio" id="email" name="contact" required/>
+              <label for="email">Send me an email</label>
+            </li>
+            <li>
+              <input type="radio" id="no-reply" name="contact" required/>
+              <label for="no-reply">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section id="terms">
+          <input type="checkbox" />
+          <label for="">Agree terms</label>
+        </section>
+
+        <section id="buttons">
+          <button type="reset" id="clear">Clear</button>
+          <button type="submit" id="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
