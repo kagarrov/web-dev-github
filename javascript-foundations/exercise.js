@@ -31,10 +31,17 @@ alert(priceCourse);
 alert(mainGoals);
 
 //3
-alert(nameCourse + " " + priceCourse + " " + mainGoals[0] + " " + mainGoals[1] + " " + mainGoals[2]);
-
+let course = {
+    nameCourse : "Web Development",
+    priceCourse : 100,
+    mainGoals : ["Learn html", "Learn CSS", "Learn JavaScript"]
+};
+// alert(nameCourse + " " + priceCourse + " " + mainGoals[0] + " " + mainGoals[1] + " " + mainGoals[2]);
+alert(course.nameCourse);
+alert(course.priceCourse);
+alert(course.mainGoals);
 //4
-alert(mainGoals[1]);
+alert(course.mainGoals[1]);
 
 //5
 
